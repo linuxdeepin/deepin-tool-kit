@@ -1,8 +1,8 @@
 # Deepin Tool Kit Document    {#mainpage}
 
-Deepint Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+Deepin Tool Kit (Dtk) is the base development tool of all C++/Qt Developer work on Deepin.
 
-You shoud read the [Deepin Application Specification](\ref Specification) firstly.
+You should read the [Deepin Application Specification](\ref Specification) firstly.
 
 ## Dependencies
 
