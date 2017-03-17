@@ -16,7 +16,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 unix{
     QT += x11extras dbus
     CONFIG += link_pkgconfig
-    PKGCONFIG += x11 xext dtksettings dtksettingsview
+    PKGCONFIG += x11 xext dtksettings-0-2 dtksettingsview-0-2
 
 
     !system($$PWD/../tool/translate_generation.sh): error("Failed to generate translation")
@@ -26,12 +26,12 @@ win32* {
     #DEPENDS dtksettings
     INCLUDEPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettings
     DEPENDPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettings
-    LIBS += -L$$LIB_INSTALL_DIR -ldtksettings
+    LIBS += -L$$LIB_INSTALL_DIR -ldtksettings-0-2
 
     #DEPENDS dtksettingsview
     INCLUDEPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettingsView
     DEPENDPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettingsView
-    LIBS += -L$$LIB_INSTALL_DIR -ldtksettingsview
+    LIBS += -L$$LIB_INSTALL_DIR -ldtksettingsview-0-2
 }
 
 HEADERS += dwidget_global.h \

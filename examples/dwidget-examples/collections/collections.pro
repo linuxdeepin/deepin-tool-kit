@@ -13,7 +13,7 @@ DEFINES += QT_MESSAGELOGCONTEXT
 unix{
     QT += x11extras dbus
     CONFIG += link_pkgconfig
-    PKGCONFIG += dtksettings dtksettingsview
+    PKGCONFIG += dtksettings-0-2 dtksettingsview-0-2
 }
 
 win32* {
@@ -22,12 +22,12 @@ win32* {
     #DEPENDS dtksettings
     INCLUDEPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettings
     DEPENDPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettings
-    LIBS += -L$$LIB_INSTALL_DIR -ldtksettings
+    LIBS += -L$$LIB_INSTALL_DIR -ldtksettings-0-2
 
     #DEPENDS dtksettingsview
     INCLUDEPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettingsView
     DEPENDPATH += $$INCLUDE_INSTALL_DIR\libdtk-1.0\DSettingsView
-    LIBS += -L$$LIB_INSTALL_DIR -ldtksettingsview
+    LIBS += -L$$LIB_INSTALL_DIR -ldtksettingsview-0-2
 }
 
 SOURCES += main.cpp\
@@ -108,10 +108,10 @@ win32* {
     #DEPENDS dtksettings
     INCLUDEPATH += $$INCLUDE_INSTALL_DIR\libdtk-0.1.0\DSettings
     DEPENDPATH += $$INCLUDE_INSTALL_DIR\libdtk-0.1.0\DSettings
-    LIBS += -L$$LIB_INSTALL_DIR -ldtksettings
+    LIBS += -L$$LIB_INSTALL_DIR -ldtksettings-0-2
 
     #DEPENDS dtksettingsview
     INCLUDEPATH += $$INCLUDE_INSTALL_DIR\libdtk-0.1.0\DSettingsView
     DEPENDPATH += $$INCLUDE_INSTALL_DIR\libdtk-0.1.0\DSettingsView
-    LIBS += -L$$LIB_INSTALL_DIR -ldtksettingsview
+    LIBS += -L$$LIB_INSTALL_DIR -ldtksettingsview-0-2
 }
