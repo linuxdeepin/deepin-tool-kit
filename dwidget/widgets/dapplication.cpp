@@ -151,13 +151,14 @@ bool DApplicationPrivate::loadDtkTranslator(QList<QLocale> localeFallback)
     q->installTranslator(qtbaseTranslator);
 
     QList<DPathBuf> translateDirs;
+    auto dtkwidgetDir = "dtkwidget1";
     auto dtkwidgetName = "dtkwidget";
 
     //("/home/user/.local/share", "/usr/local/share", "/usr/share")
     auto dataDirs = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
     for (const auto &path : dataDirs) {
         DPathBuf DPathBuf(path);
-        translateDirs << DPathBuf / dtkwidgetName / "translations";
+        translateDirs << DPathBuf / dtkwidgetDir / "translations";
     }
 
     DPathBuf runDir(q->applicationDirPath());

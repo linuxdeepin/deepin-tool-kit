@@ -24,6 +24,12 @@
 #include <QStandardPaths>
 #include <QDebug>
 
+#if QT_VERSION <= 0x050600
+uint qHash(const QMimeType &key, uint seed = 0) Q_DECL_NOTHROW {
+    return qHash(key.name(), seed);
+}
+#endif
+
 DWIDGET_BEGIN_NAMESPACE
 
 #define FORMAT ".png"

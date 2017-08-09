@@ -93,8 +93,8 @@ DEPENDPATH += $$PWD/../dutil
 SOURCES += \
     dutility.cpp
 
-TRANSLATIONS += $$PWD/translations/$${TARGET}.ts \
-                $$PWD/translations/$${TARGET}_zh_CN.ts
+TRANSLATIONS += $$PWD/translations/dtkwidget.ts \
+                $$PWD/translations/dtkwidget_zh_CN.ts
 
 translations.path = $$PREFIX/share/$${TARGET}/translations
 translations.files = $$PWD/translations/*.qm
