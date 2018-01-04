@@ -14,6 +14,7 @@
 #include <QLibraryInfo>
 #include <QTranslator>
 #include <QLocalServer>
+#include <QPixmapCache>
 #include <QProcess>
 #include <QMenu>
 #include <QStyleFactory>
@@ -175,6 +176,8 @@ DApplication::DApplication(int &argc, char **argv) :
     DObject(*new DApplicationPrivate(this))
 {
     qputenv("QT_QPA_PLATFORM", QByteArray());
+
+    QPixmapCache::setCacheLimit(0);
 }
 
 QString DApplication::theme() const
