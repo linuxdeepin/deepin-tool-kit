@@ -1,10 +1,4 @@
-all: init html qhp
-
-init:
-	rm -rf dtkwidget dtkcore dtkwm
-	git clone  https://cr.deepin.io/dtkwidget dtkwidget
-	git clone  https://cr.deepin.io/dtkcore dtkcore
-	git clone  https://cr.deepin.io/dtkwm dtkwm
+all: html qhp
 
 html:
 	doxygen Doxyfile

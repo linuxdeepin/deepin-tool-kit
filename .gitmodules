@@ -4,6 +4,3 @@
 [submodule "dtkwidget"]
 	path = dtkwidget
 	url = ../dtkwidget
-[submodule "dtkwm"]
-	path = dtkwm
-	url = ../dtkwm
